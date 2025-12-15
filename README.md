@@ -84,7 +84,6 @@ src/
 ├─ stores/
 │  ├─ auth.store.ts
 │  ├─ breadcrumb.store.ts
-│  ├─ delete-confirmation.ts
 │  └─ sidebar.store.ts
 │
 ├─ constants/
