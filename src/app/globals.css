@@ -194,4 +194,14 @@
   .scrollbar-hide::-webkit-scrollbar {
     display: none; /* Chrome, Safari, Opera */
   }
+
+  /* Smooth scrolling behavior for the entire document */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Optimize scroll performance */
+  * {
+    scroll-padding-top: 5rem;
+  }
 }
