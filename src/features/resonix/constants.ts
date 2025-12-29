@@ -1,4 +1,5 @@
-import { Akinur, IMS, Jobayer, Masud } from '@/assets';
+import { Akinur, IMS, Jobayer, Masud, PAYMAG } from '@/assets';
+import { CRYPGO } from '@/assets';
 
 import type {
   Client,
@@ -19,6 +20,8 @@ export const NAV_LINKS: NavLink[] = [
   { label: 'Reviews', href: '#reviews' },
   { label: 'Contact', href: '#contact' },
 ];
+
+export const PHONE_NUMBER = '917099119857';
 
 export const SERVICES: Service[] = [
   {
@@ -60,31 +63,31 @@ export const SERVICES: Service[] = [
 
 export const PROJECTS: Project[] = [
   {
-    _id: '1',
-    title: 'Inventory Management System',
-    description: 'A robust web application to track and manage inventory in real-time.',
-    link: '#',
-    imgSrc: IMS,
+    _id: 'paymag',
+    title: 'PayMag – Bill Payments & Cashback Platform',
+    description:
+      'A clean, responsive landing page for Paymag Communications Private Limited, showcasing bill payments, cashback features, and user trust with transparent legal pages.',
+    link: 'https://paymag.akinurrahman.com/',
+    imgSrc: PAYMAG,
     linkText: 'View Project',
-    // category: "Web Development",
   },
   {
-    _id: '2',
-    title: 'Inventory Management System',
-    description: 'A robust web application to track and manage inventory in real-time.',
-    link: '#',
-    imgSrc: IMS,
+    _id: 'crypgo',
+    title: 'Crypgo – Crypto Exchange Landing Page',
+    description:
+      'A modern, responsive landing page for a crypto exchange, built with Next.js and Tailwind CSS to showcase clean UI, smooth transitions, and frontend best practices.',
+    link: 'https://crypgo.akinurrahman.com',
+    imgSrc: CRYPGO,
     linkText: 'View Project',
-    // category: "Web Development",
   },
   {
-    _id: '3',
+    _id: 'ims',
     title: 'Inventory Management System',
-    description: 'A robust web application to track and manage inventory in real-time.',
+    description:
+      'A web-based inventory management system designed to track stock, manage items, and monitor inventory status in real time for operational efficiency.',
     link: '#',
     imgSrc: IMS,
     linkText: 'View Project',
-    // category: "Web Development",
   },
 ];
 
@@ -147,7 +150,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
     role: 'Co-Founder & Marketing Head',
     description: 'Creative designer focused on user experience and visual storytelling.',
     avatar: Jobayer,
-    link: 'https://www.linkedin.com/in/jobayer-ahmed/',
+    link: '#',
   },
 ];
 

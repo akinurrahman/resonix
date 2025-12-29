@@ -6,6 +6,7 @@ import {
   ContactSection,
   Footer,
   HeroSection,
+  PHONE_NUMBER,
   ResonixNavbar,
   ReviewsSection,
   ServicesSection,
@@ -18,12 +19,12 @@ export default function ResonixPage() {
   // Contact form logic
   const { form, isSubmitting, submitStatus, handleSubmit } = useContactForm();
 
-  // Navigation handlers
   const handleRequestDemo = () => {
-    const element = document.querySelector('#contact');
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
+    const message = encodeURIComponent(
+      "Hey, I'm looking to get software developed for my business. Are you available to discuss?"
+    );
+
+    window.open(`https://wa.me/${PHONE_NUMBER}?text=${message}`, '_blank');
   };
 
   const handleViewWork = () => {

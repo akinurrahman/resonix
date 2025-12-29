@@ -4,3 +4,5 @@ export { default as Masud } from './masud.jpeg';
 export { default as Jobayer } from './jobayer.jpeg';
 
 export { default as IMS } from './ims.webp';
+export { default as PAYMAG } from './paymag.png';
+export { default as CRYPGO } from './crypgo.png';
